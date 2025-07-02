@@ -22,17 +22,21 @@
       width: 100%;
       top: 0;
       z-index: 1000;
-      box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .navbar .nav-link {
       color: #fbe9e7 !important;
+      font-family: 'Poppins';
+      font-size: 18px;
       font-weight: 600;
     }
 
     .navbar .navbar-brand {
-      color: #ffe0b2 !important;
+      color: #ffe0b2;
       font-weight: bold;
+      font-family: 'Poppins';
+      font-size: 30px;
       font-size: 1.6rem;
     }
 
@@ -79,13 +83,15 @@
     }
 
     .btn:hover {
-      background-color: #ffe0b2;
+      background-color: #5d4037;
+      color: white;
     }
 
     .section-heading {
       font-size: 2rem;
       color: #5d4037;
       font-weight: 700;
+      font-family: 'poppins';
       margin-top: 3rem;
       margin-bottom: 2rem;
       text-align: center;
@@ -96,9 +102,11 @@
       padding: 20px;
       background-color: white;
       color: #3e2723;
+      font-family: 'poppins';
+      font-size: 18px;
       text-align: center;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s;
+      transition: transform 0.5s;
     }
 
     .product-card img {
@@ -108,8 +116,8 @@
       border-radius: 20px;
     }
 
-    .product-card:hover{
-      transform: scale(1.1);
+    .product-card:hover {
+      transform: scale(1.05);
     }
 
     .footer {
@@ -127,6 +135,7 @@
 
     .footer-section h3 {
       font-size: 1.3rem;
+      font-family: 'poppins';
       margin-bottom: 20px;
       color: #ffe0b2;
     }
@@ -225,8 +234,7 @@
       <div class="col-6 col-md-3">
         <div class="product-card">
           <img src="Dessert/Baked Blueberry Cheese Cake Slice.webp" class="img-fluid mb-2"
-            alt="Baked Blueberry Cheese Cake Slice">
-          Baked Blueberry Cheese Cake Slice<br>Rs.505
+            alt="Baked Blueberry Cheese Cake Slice">Blueberry Cheese Cake<br>Rs.505
           <button class="btn mt-3 mx-auto d-block" style="width: 70%;">Add to Cart</button>
         </div>
       </div>
@@ -354,19 +362,6 @@
       btn.addEventListener('click', function () {
         alert('Item added to cart!');
       });
-    });
-
-    const btn = document.getElementById('exploreBtn');
-
-    btn.addEventListener('mouseover', function () {
-      btn.style.backgroundColor = 'black';
-      btn.style.color = 'crimson';
-    });
-
-
-    btn.addEventListener('mouseout', function () {
-      btn.style.backgroundColor = '';
-      btn.style.color = '';
     });
 
   </script>
